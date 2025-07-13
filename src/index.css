@@ -1,3 +1,5 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
@@ -9,39 +11,40 @@ All colors MUST be HSL.
 @layer base {
   :root {
     --background: 200 50% 98%;
-    --foreground: 200 20% 20%;
+    --foreground: 220 30% 35%;
 
     --card: 200 30% 96%;
-    --card-foreground: 200 20% 20%;
+    --card-foreground: 220 30% 35%;
 
     --popover: 200 30% 96%;
-    --popover-foreground: 200 20% 20%;
+    --popover-foreground: 220 30% 35%;
 
-    --primary: 195 100% 70%;
+    --primary: 210 100% 70%;
     --primary-foreground: 200 30% 96%;
-    --primary-glow: 195 100% 80%;
+    --primary-glow: 210 100% 80%;
 
     --secondary: 180 30% 90%;
-    --secondary-foreground: 200 20% 20%;
+    --secondary-foreground: 220 30% 35%;
 
     --muted: 180 30% 90%;
-    --muted-foreground: 200 15% 50%;
+    --muted-foreground: 220 25% 45%;
 
     --accent: 170 60% 85%;
-    --accent-foreground: 200 20% 20%;
+    --accent-foreground: 220 30% 35%;
 
     --destructive: 0 84.2% 60.2%;
     --destructive-foreground: 200 30% 96%;
 
     --border: 180 20% 85%;
     --input: 180 20% 85%;
-    --ring: 195 100% 70%;
+    --ring: 210 100% 70%;
 
     /* Custom design tokens - Aquatic theme */
-    --gradient-primary: linear-gradient(135deg, hsl(195 100% 70%), hsl(170 60% 85%));
+    --gradient-primary: linear-gradient(135deg, hsl(210 100% 85%), hsl(220 80% 40%));
+    --gradient-secondary: linear-gradient(135deg, hsl(196, 58%, 60%), hsl(220, 77%, 60%));
     --gradient-subtle: linear-gradient(180deg, hsl(200 50% 98%), hsl(180 30% 90%));
-    --shadow-glow: 0 0 40px hsl(195 100% 70% / 0.3);
-    --shadow-accent: 0 0 30px hsl(170 60% 85% / 0.4);
+    --shadow-glow: 0 0 40px hsl(210 100% 85% / 0.3);
+    --shadow-accent: 0 0 30px hsl(220 80% 40% / 0.4);
 
     --radius: 0.5rem;
 
@@ -107,6 +110,6 @@ All colors MUST be HSL.
   }
 
   body {
-    @apply bg-background text-foreground;
+    @apply bg-slate-50 text-slate-700;
   }
 }

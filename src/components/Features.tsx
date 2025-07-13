@@ -7,7 +7,7 @@ const Features = () => {
     {
       icon: <Mic className="h-8 w-8 text-primary" />,
       title: "Smart Conversation Capture",
-      description: "Record and transcribe key moments from events with AI-powered note-taking that captures your precious memorris.",
+      description: "Record and transcribe key moments from events with AI-powered note-taking that captures your precious memorries.",
       details: ["Voice-to-text transcription", "Auto-summarization", "Key quotes extraction"]
     },
     {

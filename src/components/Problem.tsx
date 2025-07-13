@@ -35,7 +35,7 @@ const Problem = () => {
           </h2>
           <p className="text-xl text-muted-foreground max-w-3xl mx-auto">
             You attend conferences, hackathons, and meetups. You make great connections. 
-            But like Dory, your memorris drift away and you can't remember the details that matter.
+            But like Dory, your memorries drift away and you can't remember the details that matter.
           </p>
         </div>
         

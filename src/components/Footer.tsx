@@ -14,7 +14,7 @@ const Footer = () => {
             </div>
             <p className="text-muted-foreground mb-4 max-w-md">
               Your AI-powered memory for human connections. Never forget who you met, 
-              where you met them, or what you talked about - swimming through your memorris with ease.
+              where you met them, or what you talked about - swimming through your memorries with ease.
             </p>
             <div className="flex gap-4">
               <Twitter className="h-5 w-5 text-muted-foreground hover:text-primary cursor-pointer transition-colors" />

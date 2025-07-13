@@ -26,7 +26,11 @@ const Header = () => {
         
         <div className="flex items-center gap-4">
           <Button variant="ghost">Sign In</Button>
-          <Button variant="hero">Get Early Access</Button>
+          <Button variant="hero" asChild>
+            <a href="https://tally.so/r/wkjLjM" target="_blank" rel="noopener noreferrer">
+              Get Early Access
+            </a>
+          </Button>
         </div>
       </div>
     </header>

@@ -16,11 +16,13 @@ const CTA = () => {
           </p>
           
           <div className="flex flex-col sm:flex-row gap-4 justify-center">
-            <Button variant="accent" size="lg" className="text-lg px-8">
-              <Bell className="mr-2 h-5 w-5" />
-              Join Waitlist
+            <Button variant="accent" size="lg" className="text-lg px-8" asChild>
+              <a href="https://tally.so/r/wkjLjM" target="_blank" rel="noopener noreferrer">
+                <Bell className="mr-2 h-5 w-5" />
+                Join Waitlist
+              </a>
             </Button>
-            <Button variant="outline" size="lg" className="text-lg px-8 border-primary-foreground/20 text-primary-foreground hover:bg-primary-foreground/10">
+            <Button variant="outline" size="lg" className="text-lg px-8 bg-white/10 border-white/20 text-white hover:bg-white/20">
               Schedule Demo
               <ArrowRight className="ml-2 h-5 w-5" />
             </Button>

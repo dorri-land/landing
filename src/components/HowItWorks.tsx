@@ -11,7 +11,7 @@ const HowItWorks = () => {
     },
     {
       icon: <Mic className="h-12 w-12 text-accent" />,
-      title: "Capture Memorris",
+      title: "Capture memorries",
       description: "Use voice recording or quick notes to capture who you meet and what you discuss. Dorri handles the heavy lifting.",
       step: "02"
     },
