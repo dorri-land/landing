@@ -8,11 +8,11 @@ const CTA = () => {
       <div className="container mx-auto px-4">
         <div className="text-center mb-12">
           <h2 className="text-4xl font-bold text-primary-foreground mb-6">
-            Ready to Supercharge Your Networking?
+            Ready to Dive Into Better Networking?
           </h2>
           <p className="text-xl text-primary-foreground/80 max-w-3xl mx-auto mb-8">
-            Join the waitlist for early access to MemoryLink. Be among the first to experience 
-            AI-powered relationship intelligence that transforms how you connect.
+            Join the waitlist for early access to Dorri. Be among the first to experience 
+            AI-powered relationship intelligence that transforms how you connect and remember.
           </p>
           
           <div className="flex flex-col sm:flex-row gap-4 justify-center">

@@ -1,5 +1,5 @@
 import { Card } from "@/components/ui/card";
-import { AlertCircle, MessageSquare, Search, Clock } from "lucide-react";
+import { Anchor, MessageSquare, Search, Clock } from "lucide-react";
 
 const Problem = () => {
   const problems = [
@@ -19,7 +19,7 @@ const Problem = () => {
       description: "Valuable connections slip through the cracks because you can't remember who offered what."
     },
     {
-      icon: <AlertCircle className="h-8 w-8 text-destructive" />,
+      icon: <Anchor className="h-8 w-8 text-destructive" />,
       title: "Networking Inefficiency",
       description: "At events, you struggle to find the right people to connect with and ask meaningful questions."
     }
@@ -35,7 +35,7 @@ const Problem = () => {
           </h2>
           <p className="text-xl text-muted-foreground max-w-3xl mx-auto">
             You attend conferences, hackathons, and meetups. You make great connections. 
-            But then the magic fades because you can't remember the details that matter.
+            But like Dory, your memorris drift away and you can't remember the details that matter.
           </p>
         </div>
         

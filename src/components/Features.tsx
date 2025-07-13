@@ -1,13 +1,13 @@
 import { Card } from "@/components/ui/card";
 import { Button } from "@/components/ui/button";
-import { Brain, Mic, Calendar, Search, Users, MessageSquare, Zap, MapPin } from "lucide-react";
+import { Fish, Mic, Calendar, Search, Waves, Shell, Zap, MapPin } from "lucide-react";
 
 const Features = () => {
   const features = [
     {
       icon: <Mic className="h-8 w-8 text-primary" />,
       title: "Smart Conversation Capture",
-      description: "Record and transcribe key moments from events with AI-powered note-taking that captures what matters.",
+      description: "Record and transcribe key moments from events with AI-powered note-taking that captures your precious memorris.",
       details: ["Voice-to-text transcription", "Auto-summarization", "Key quotes extraction"]
     },
     {
@@ -17,9 +17,9 @@ const Features = () => {
       details: ["Google Calendar sync", "Location tagging", "Luma/Meetup integration"]
     },
     {
-      icon: <Brain className="h-8 w-8 text-primary" />,
+      icon: <Fish className="h-8 w-8 text-primary" />,
       title: "AI Memory Assistant",
-      description: "Your personal second brain that remembers everyone you've met and what you discussed.",
+      description: "Your personal memory companion that remembers everyone you've met and what you discussed, like a faithful fish friend.",
       details: ["Semantic search", "Connection insights", "Follow-up suggestions"]
     },
     {
@@ -29,15 +29,15 @@ const Features = () => {
       details: ["Natural language queries", "Smart filtering", "Connection mapping"]
     },
     {
-      icon: <Users className="h-8 w-8 text-primary" />,
+      icon: <Waves className="h-8 w-8 text-primary" />,
       title: "LinkedIn+ Integration",
       description: "Enhances your LinkedIn connections with real-world context and conversation history.",
       details: ["Profile enrichment", "Context preservation", "Auto-outreach templates"]
     },
     {
-      icon: <MessageSquare className="h-8 w-8 text-accent" />,
+      icon: <Shell className="h-8 w-8 text-accent" />,
       title: "Follow-up Intelligence",
-      description: "Get smart reminders and suggestions for when and how to reconnect with people.",
+      description: "Get smart reminders and suggestions for when and how to reconnect with people, like finding pearls in your network.",
       details: ["Timing optimization", "Message templates", "Opportunity tracking"]
     }
   ];
@@ -51,8 +51,8 @@ const Features = () => {
             <span className="bg-gradient-primary bg-clip-text text-transparent"> Superpower</span>
           </h2>
           <p className="text-xl text-muted-foreground max-w-3xl mx-auto">
-            MemoryLink transforms how you build and maintain professional relationships, 
-            giving you the context and intelligence you need to connect meaningfully.
+            Dorri transforms how you build and maintain professional relationships, 
+            giving you the context and intelligence you need to connect meaningfully in the ocean of opportunities.
           </p>
         </div>
         

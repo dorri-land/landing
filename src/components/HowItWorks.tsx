@@ -1,28 +1,28 @@
 import { Card } from "@/components/ui/card";
-import { ArrowRight, MapPin, Mic, Brain, Users } from "lucide-react";
+import { ArrowRight, MapPin, Mic, Fish, Waves } from "lucide-react";
 
 const HowItWorks = () => {
   const steps = [
     {
       icon: <MapPin className="h-12 w-12 text-primary" />,
       title: "Attend Events",
-      description: "Go to conferences, meetups, or hackathons as usual. MemoryLink detects events through your calendar and location.",
+      description: "Go to conferences, meetups, or hackathons as usual. Dorri detects events through your calendar and location.",
       step: "01"
     },
     {
       icon: <Mic className="h-12 w-12 text-accent" />,
-      title: "Capture Connections",
-      description: "Use voice recording or quick notes to capture who you meet and what you discuss. Our AI handles the heavy lifting.",
+      title: "Capture Memorris",
+      description: "Use voice recording or quick notes to capture who you meet and what you discuss. Dorri handles the heavy lifting.",
       step: "02"
     },
     {
-      icon: <Brain className="h-12 w-12 text-primary" />,
+      icon: <Fish className="h-12 w-12 text-primary" />,
       title: "AI Processing",
       description: "Advanced AI organizes, summarizes, and enriches your conversations with LinkedIn data and event context.",
       step: "03"
     },
     {
-      icon: <Users className="h-12 w-12 text-accent" />,
+      icon: <Waves className="h-12 w-12 text-accent" />,
       title: "Smart Recall",
       description: "Ask questions like 'Who did I meet at the biotech summit who works at Sanofi?' and get instant, accurate answers.",
       step: "04"
@@ -38,8 +38,8 @@ const HowItWorks = () => {
             <span className="bg-gradient-primary bg-clip-text text-transparent"> Works</span>
           </h2>
           <p className="text-xl text-muted-foreground max-w-3xl mx-auto">
-            MemoryLink seamlessly integrates into your networking workflow, 
-            capturing and organizing your connections without changing how you naturally interact.
+            Dorri seamlessly integrates into your networking workflow, 
+            capturing and organizing your connections without changing how you naturally interact in the sea of opportunities.
           </p>
         </div>
         

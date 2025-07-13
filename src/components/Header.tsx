@@ -1,14 +1,14 @@
 import { Button } from "@/components/ui/button";
-import { Brain } from "lucide-react";
+import { Fish } from "lucide-react";
 
 const Header = () => {
   return (
     <header className="fixed top-0 w-full z-50 bg-background/80 backdrop-blur-sm border-b border-border">
       <div className="container mx-auto px-4 h-16 flex items-center justify-between">
         <div className="flex items-center gap-2">
-          <Brain className="h-8 w-8 text-primary" />
+          <Fish className="h-8 w-8 text-primary" />
           <span className="text-xl font-bold bg-gradient-primary bg-clip-text text-transparent">
-            MemoryLink
+            Dorri
           </span>
         </div>
         

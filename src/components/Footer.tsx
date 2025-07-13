@@ -1,4 +1,4 @@
-import { Brain, Twitter, Linkedin, Github } from "lucide-react";
+import { Fish, Twitter, Linkedin, Github } from "lucide-react";
 
 const Footer = () => {
   return (
@@ -7,14 +7,14 @@ const Footer = () => {
         <div className="grid md:grid-cols-4 gap-8">
           <div className="col-span-2">
             <div className="flex items-center gap-2 mb-4">
-              <Brain className="h-8 w-8 text-primary" />
+              <Fish className="h-8 w-8 text-primary" />
               <span className="text-xl font-bold bg-gradient-primary bg-clip-text text-transparent">
-                MemoryLink
+                Dorri
               </span>
             </div>
             <p className="text-muted-foreground mb-4 max-w-md">
               Your AI-powered memory for human connections. Never forget who you met, 
-              where you met them, or what you talked about.
+              where you met them, or what you talked about - swimming through your memorris with ease.
             </p>
             <div className="flex gap-4">
               <Twitter className="h-5 w-5 text-muted-foreground hover:text-primary cursor-pointer transition-colors" />
@@ -45,7 +45,7 @@ const Footer = () => {
         </div>
         
         <div className="border-t border-border mt-8 pt-8 text-center text-muted-foreground">
-          <p>&copy; 2025 MemoryLink. All rights reserved.</p>
+          <p>&copy; 2025 Dorri. All rights reserved.</p>
         </div>
       </div>
     </footer>

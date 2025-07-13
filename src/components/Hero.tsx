@@ -1,6 +1,6 @@
 import { Button } from "@/components/ui/button";
-import { ArrowRight, Users, Calendar, Mic } from "lucide-react";
-import heroImage from "@/assets/hero-network.jpg";
+import { ArrowRight, Waves, Calendar, Mic } from "lucide-react";
+import heroImage from "@/assets/ocean-hero.jpg";
 
 const Hero = () => {
   return (
@@ -17,8 +17,8 @@ const Hero = () => {
               </h1>
               <p className="text-xl text-muted-foreground leading-relaxed">
                 Never forget who you met, where you met them, or what you talked about. 
-                MemoryLink captures and contextualizes your real-world networking moments, 
-                so you can build meaningful relationships that last.
+                Dorri captures and contextualizes your real-world networking moments, 
+                turning your memorris into meaningful relationships that last.
               </p>
             </div>
             
@@ -34,7 +34,7 @@ const Hero = () => {
             
             <div className="grid grid-cols-3 gap-8 pt-8">
               <div className="text-center">
-                <Users className="h-8 w-8 text-accent mx-auto mb-2" />
+                <Waves className="h-8 w-8 text-accent mx-auto mb-2" />
                 <div className="text-sm text-muted-foreground">Smart Networking</div>
               </div>
               <div className="text-center">
