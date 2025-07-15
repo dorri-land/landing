@@ -1,14 +1,14 @@
 import { Button } from "@/components/ui/button";
-import { Fish } from "lucide-react";
+import logo from "@/assets/logo.png";
 
 const Header = () => {
   return (
     <header className="fixed top-0 w-full z-50 bg-background/80 backdrop-blur-sm border-b border-border">
       <div className="container mx-auto px-4 h-16 flex items-center justify-between">
         <div className="flex items-center gap-2">
-          <Fish className="h-8 w-8 text-primary" />
-          <span className="text-xl font-bold bg-gradient-primary bg-clip-text text-transparent">
-            Dorri
+          <img src={logo} alt="dorri logo" className="h-8 w-8" />
+          <span className="text-xl font-medium lowercase bg-gradient-primary bg-clip-text text-transparent">
+            dorri
           </span>
         </div>
         
@@ -25,7 +25,6 @@ const Header = () => {
         </nav>
         
         <div className="flex items-center gap-4">
-          <Button variant="ghost">Sign In</Button>
           <Button variant="hero" asChild>
             <a href="https://tally.so/r/wkjLjM" target="_blank" rel="noopener noreferrer">
               Get Early Access

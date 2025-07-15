@@ -1,4 +1,5 @@
-import { Fish, Twitter, Linkedin, Github } from "lucide-react";
+import { Twitter, Linkedin } from "lucide-react";
+import logo from "@/assets/logo.png";
 
 const Footer = () => {
   return (
@@ -7,19 +8,27 @@ const Footer = () => {
         <div className="grid md:grid-cols-4 gap-8">
           <div className="col-span-2">
             <div className="flex items-center gap-2 mb-4">
-              <Fish className="h-8 w-8 text-primary" />
-              <span className="text-xl font-bold bg-gradient-primary bg-clip-text text-transparent">
-                Dorri
+              <img src={logo} alt="dorri logo" className="h-8 w-8" />
+              <span className="text-xl font-medium lowercase bg-gradient-primary bg-clip-text text-transparent">
+                dorri
               </span>
             </div>
             <p className="text-muted-foreground mb-4 max-w-md">
               Your AI-powered memory for human connections. Never forget who you met, 
-              where you met them, or what you talked about - swimming through your memorries with ease.
+              where you met them, or what you talked about - swimming through your memories with ease.
             </p>
             <div className="flex gap-4">
-              <Twitter className="h-5 w-5 text-muted-foreground hover:text-primary cursor-pointer transition-colors" />
-              <Linkedin className="h-5 w-5 text-muted-foreground hover:text-primary cursor-pointer transition-colors" />
-              <Github className="h-5 w-5 text-muted-foreground hover:text-primary cursor-pointer transition-colors" />
+              <a href="https://twitter.com/dorri-land" target="_blank" rel="noopener noreferrer">
+                <Twitter className="h-5 w-5 text-muted-foreground hover:text-primary cursor-pointer transition-colors" />
+              </a>
+              <a href="https://linkedin.com/in/dorri-land" target="_blank" rel="noopener noreferrer">
+                <Linkedin className="h-5 w-5 text-muted-foreground hover:text-primary cursor-pointer transition-colors" />
+              </a>
+              <a href="https://tiktok.com/@dorri.land" target="_blank" rel="noopener noreferrer">
+                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor" className="h-5 w-5 text-muted-foreground hover:text-primary cursor-pointer transition-colors">
+                  <path d="M12.75 2.25h3A.75.75 0 0 1 16.5 3v2.25a3.75 3.75 0 0 0 3.75 3.75h.75a.75.75 0 0 1 .75.75v2.25a.75.75 0 0 1-.75.75h-1.5v5.25a6.75 6.75 0 1 1-6.75-6.75.75.75 0 0 1 .75.75v2.25a.75.75 0 0 1-.75.75 2.25 2.25 0 1 0 2.25 2.25V3a.75.75 0 0 1 .75-.75z" />
+                </svg>
+              </a>
             </div>
           </div>
           

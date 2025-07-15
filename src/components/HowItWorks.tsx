@@ -1,5 +1,6 @@
 import { Card } from "@/components/ui/card";
-import { ArrowRight, MapPin, Mic, Fish, Waves } from "lucide-react";
+import { ArrowRight, MapPin, Mic, Waves } from "lucide-react";
+import logo from "@/assets/logo.png";
 
 const HowItWorks = () => {
   const steps = [
@@ -11,12 +12,12 @@ const HowItWorks = () => {
     },
     {
       icon: <Mic className="h-12 w-12 text-accent" />,
-      title: "Capture memorries",
+      title: "Capture memories",
       description: "Use voice recording or quick notes to capture who you meet and what you discuss. Dorri handles the heavy lifting.",
       step: "02"
     },
     {
-      icon: <Fish className="h-12 w-12 text-primary" />,
+      icon: <img src={logo} alt="dorri logo" className="h-12 w-12" />,
       title: "AI Processing",
       description: "Advanced AI organizes, summarizes, and enriches your conversations with LinkedIn data and event context.",
       step: "03"

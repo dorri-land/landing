@@ -26,15 +26,15 @@ const Hero = () => {
       <div className="container mx-auto px-4 py-20 relative z-10">
         <div className="max-w-4xl mx-auto text-center space-y-12">
           <div className="space-y-6">
-            <h1 className="text-5xl lg:text-6xl font-bold leading-tight text-slate-700">
+            <h1 className="text-4xl lg:text-5xl font-semibold leading-tight text-slate-700">
               Remember 
               <span className="bg-gradient-secondary bg-clip-text text-transparent"> everyone </span>
                you meet.
             </h1>
-            <p className="text-xl text-slate-600 leading-relaxed max-w-3xl mx-auto">
+            <p className="text-lg text-slate-600 leading-relaxed max-w-3xl mx-auto">
               Never forget who you met, where you met them, or what you talked about. 
               Dorri captures and contextualizes your real-world networking moments, 
-              turning your memorries into meaningful relationships that last.
+              turning your memories into meaningful relationships that last.
             </p>
           </div>
           

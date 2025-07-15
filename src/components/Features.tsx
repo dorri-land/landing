@@ -1,13 +1,14 @@
 import { Card } from "@/components/ui/card";
 import { Button } from "@/components/ui/button";
 import { Fish, Mic, Calendar, Search, Waves, Shell, Zap, MapPin } from "lucide-react";
+import logo from "@/assets/logo.png";
 
 const Features = () => {
   const features = [
     {
       icon: <Mic className="h-8 w-8 text-primary" />,
       title: "Smart Conversation Capture",
-      description: "Record and transcribe key moments from events with AI-powered note-taking that captures your precious memorries.",
+      description: "Record and transcribe key moments from events with AI-powered note-taking that captures your precious memories.",
       details: ["Voice-to-text transcription", "Auto-summarization", "Key quotes extraction"]
     },
     {
@@ -17,7 +18,7 @@ const Features = () => {
       details: ["Google Calendar sync", "Location tagging", "Luma/Meetup integration"]
     },
     {
-      icon: <Fish className="h-8 w-8 text-primary" />,
+      icon: <img src={logo} alt="dorri logo" className="h-8 w-8" />,
       title: "AI Memory Assistant",
       description: "Your personal memory companion that remembers everyone you've met and what you discussed, like a faithful fish friend.",
       details: ["Semantic search", "Connection insights", "Follow-up suggestions"]
