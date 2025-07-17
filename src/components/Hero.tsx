@@ -41,8 +41,10 @@ const Hero = () => {
                 <ArrowRight className="ml-2 h-5 w-5" />
               </a>
             </Button>
-            <Button variant="outline" size="lg" className="text-lg px-8 bg-white/80 border-slate-200 text-slate-700 hover:bg-white hover:border-slate-300">
-              Watch Demo
+            <Button variant="outline" size="lg" className="text-lg px-8 bg-white/45 border-slate-200 text-slate-700 hover:bg-white/65 hover:border-slate-300">
+            <a href="#how-it-works">
+                How it works
+              </a>
             </Button>
           </div>
           

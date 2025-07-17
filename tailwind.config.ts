@@ -102,7 +102,18 @@ export default {
 			animation: {
 				'accordion-down': 'accordion-down 0.2s ease-out',
 				'accordion-up': 'accordion-up 0.2s ease-out'
-			}
+			},
+			opacity: {
+				85: '0.85',
+				75: '0.75',
+				65: '0.65',
+				55: '0.55',
+				45: '0.45',
+				35: '0.35',
+				25: '0.25',
+				15: '0.15',
+				5: '0.05',
+			},
 		}
 	},
 	plugins: [require("tailwindcss-animate")],
