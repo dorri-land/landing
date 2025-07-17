@@ -14,8 +14,8 @@ const Footer = () => {
               </span>
             </div>
             <p className="text-muted-foreground mb-4 max-w-md">
-              Your AI-powered memory for human connections. Never forget who you met, 
-              where you met them, or what you talked about - swimming through your memories with ease.
+              Your memory layer for the real world. Never forget who you met, 
+              what you heard, or why it mattered.
             </p>
             <div className="flex gap-4">
               <a href="https://twitter.com/dorri-land" target="_blank" rel="noopener noreferrer">

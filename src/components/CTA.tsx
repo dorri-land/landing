@@ -32,7 +32,7 @@ const CTA = () => {
         <div className="grid md:grid-cols-3 gap-6 max-w-4xl mx-auto">
           <Card className="p-6 text-center bg-primary-foreground/10 border-primary-foreground/20">
             <Users className="h-8 w-8 text-primary-foreground mx-auto mb-3" />
-            <div className="text-2xl font-bold text-primary-foreground mb-1">500+</div>
+            <div className="text-2xl font-bold text-primary-foreground mb-1">100+</div>
             <div className="text-primary-foreground/70 text-sm">Early Access Signups</div>
           </Card>
           
@@ -44,7 +44,7 @@ const CTA = () => {
           
           <Card className="p-6 text-center bg-primary-foreground/10 border-primary-foreground/20">
             <Bell className="h-8 w-8 text-primary-foreground mx-auto mb-3" />
-            <div className="text-2xl font-bold text-primary-foreground mb-1">Q1</div>
+            <div className="text-2xl font-bold text-primary-foreground mb-1">Q3</div>
             <div className="text-primary-foreground/70 text-sm">2025 Launch</div>
           </Card>
         </div>

@@ -7,9 +7,9 @@ const Features = () => {
   const features = [
     {
       icon: <Mic className="h-8 w-8 text-primary" />,
-      title: "Smart Conversation Capture",
-      description: "Record and transcribe key moments from events with AI-powered note-taking that captures your precious memories.",
-      details: ["Voice-to-text transcription", "Auto-summarization", "Key quotes extraction"]
+      title: "Live Summarization",
+      description: "Dorri provides live summarization of what you hear at events, so you never miss the important details.",
+      details: ["Real-time summaries", "Key moments highlighted", "No audio is stored"]
     },
     {
       icon: <Calendar className="h-8 w-8 text-accent" />,

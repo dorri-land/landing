@@ -1,5 +1,5 @@
 import { Card } from "@/components/ui/card";
-import { ArrowRight, MapPin, Mic, Waves } from "lucide-react";
+import { ArrowRight, MapPin, Mic, Waves, Search } from "lucide-react";
 import logo from "@/assets/logo.png";
 
 const HowItWorks = () => {
@@ -11,21 +11,21 @@ const HowItWorks = () => {
       step: "01"
     },
     {
-      icon: <Mic className="h-12 w-12 text-accent" />,
-      title: "Capture memories",
-      description: "Use voice recording or quick notes to capture who you meet and what you discuss. Dorri handles the heavy lifting.",
+      icon: <Mic className="h-12 w-12 text-primary" />,
+      title: "Capture Memories",
+      description: "Dorri provides live summarization of what you hear and smartly organizes your memories with event and LinkedIn context.",
       step: "02"
     },
     {
-      icon: <img src={logo} alt="dorri logo" className="h-12 w-12" />,
-      title: "AI Processing",
-      description: "Advanced AI organizes, summarizes, and enriches your conversations with LinkedIn data and event context.",
+      icon: <Search className="h-12 w-12 text-primary" />,
+      title: "Smart Recall",
+      description: "Ask questions like 'Who did I meet at the biotech summit who works at Sanofi?' and get instant, accurate answers.",
       step: "03"
     },
     {
-      icon: <Waves className="h-12 w-12 text-accent" />,
-      title: "Smart Recall",
-      description: "Ask questions like 'Who did I meet at the biotech summit who works at Sanofi?' and get instant, accurate answers.",
+      icon: <Waves className="h-12 w-12 text-primary" />,
+      title: "Act & Connect",
+      description: "Get actionable reminders and one-click follow-ups for the people and opportunities that matter most. ",
       step: "04"
     }
   ];
