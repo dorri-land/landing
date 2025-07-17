@@ -43,7 +43,7 @@ const Hero = () => {
             </Button>
             <Button variant="outline" size="lg" className="text-lg px-8 bg-white/45 border-slate-200 text-slate-700 hover:bg-white/65 hover:border-slate-300">
             <a href="#how-it-works">
-                How it works
+                How It Works
               </a>
             </Button>
           </div>
