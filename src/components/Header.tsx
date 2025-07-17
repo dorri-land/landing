@@ -3,11 +3,11 @@ import logo from "@/assets/logo.png";
 
 const Header = () => {
   return (
-    <header className="fixed top-0 w-full z-50 bg-background/80 backdrop-blur-sm border-b border-border">
-      <div className="container mx-auto px-4 h-16 flex items-center justify-between">
+    <header className="fixed top-4 left-1/2 -translate-x-1/2 w-[95vw] max-w-7xl z-50 bg-white/45 backdrop-blur rounded-2xl border border-white/90 shadow-lg">
+      <div className="container mx-auto pl-12 pr-12 h-16 flex items-center justify-between">
         <div className="flex items-center gap-2">
           <img src={logo} alt="dorri logo" className="h-8 w-8" />
-          <span className="text-xl font-medium lowercase bg-gradient-primary bg-clip-text text-transparent">
+          <span className="text-2xl font-medium lowercase bg-gradient-primary bg-clip-text text-transparent">
             dorri
           </span>
         </div>
