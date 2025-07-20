@@ -1,18 +1,18 @@
-import { google } from 'googleapis';
-import path from 'path';
-import fs from 'fs';
-
-// Load service account credentials
-const keyPath = path.join(process.cwd(), 'service-account.json');
-const keys = JSON.parse(fs.readFileSync(keyPath, 'utf8'));
-
-const sheets = google.sheets('v4');
-const auth = new google.auth.GoogleAuth({
-  credentials: keys,
-  scopes: ['https://www.googleapis.com/auth/spreadsheets'],
-});
-
 export default async function handler(req, res) {
+  const { google } = await import('googleapis');
+  const path = (await import('path')).default;
+  const fs = (await import('fs')).default;
+
+  // Load service account credentials
+  const keyPath = path.join(process.cwd(), 'service-account.json');
+  const keys = JSON.parse(fs.readFileSync(keyPath, 'utf8'));
+
+  const sheets = google.sheets('v4');
+  const auth = new google.auth.GoogleAuth({
+    credentials: keys,
+    scopes: ['https://www.googleapis.com/auth/spreadsheets'],
+  });
+
   if (req.method !== 'POST') {
     return res.status(405).json({ error: 'Method not allowed' });
   }
