@@ -1,11 +1,8 @@
 export default async function handler(req, res) {
   const { google } = await import('googleapis');
-  const path = (await import('path')).default;
-  const fs = (await import('fs')).default;
 
   // Load service account credentials
-  const keyPath = path.join(process.cwd(), 'service-account.json');
-  const keys = JSON.parse(fs.readFileSync(keyPath, 'utf8'));
+  const keys = JSON.parse(process.env.GOOGLE_SERVICE_ACCOUNT);
 
   const sheets = google.sheets('v4');
   const auth = new google.auth.GoogleAuth({
