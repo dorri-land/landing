@@ -25,7 +25,7 @@ export default async function handler(req, res) {
   try {
     const client = await auth.getClient();
     const spreadsheetId = '140ELPHQBQN45JloXBkN2vhfayqYsivEXggU6p2KVRzo'; // <-- Your Sheet ID
-    const range = 'Sheet1!A:B';
+    const range = 'Sheet1!C:D';
 
     await sheets.spreadsheets.values.append({
       auth: client,

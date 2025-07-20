@@ -61,7 +61,7 @@ const Hero = () => {
             </p>
             <div className="mt-6 max-w-md mx-auto">
               {submitted ? (
-                <div className="text-center text-lg font-semibold text-primary mt-4">welcome to the dorriland &lt;3</div>
+                <div className="ml-2 px-4 py-2 rounded-full bg-gradient-primary shadow-glow text-white  transition text-md">welcome to the dorriland &lt;3</div>
               ) : (
                 <form
                   className="flex items-center bg-white/60 rounded-full px-2 py-2 max-w-md mx-auto border border-white/80"
