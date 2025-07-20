@@ -4,8 +4,6 @@ import heroImage from "@/assets/ocean-hero.jpg";
 import bg5 from "@/assets/bg1.png";
 import { useRef, useState } from "react";
 
-const GOOGLE_SCRIPT_URL = import.meta.env.VITE_GOOGLE_SCRIPT_URL;
-
 const Hero = () => {
   const [submitted, setSubmitted] = useState(false);
   const [error, setError] = useState(false);
@@ -15,7 +13,7 @@ const Hero = () => {
     const email = e.target.elements.email.value;
     try {
       const response = await fetch(
-        GOOGLE_SCRIPT_URL,
+        '/api/waitlist',
         {
           method: "POST",
           body: JSON.stringify({ email }),
