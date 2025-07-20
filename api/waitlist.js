@@ -1,6 +1,6 @@
-const { google } = require('googleapis');
-const path = require('path');
-const fs = require('fs');
+import { google } from 'googleapis';
+import path from 'path';
+import fs from 'fs';
 
 // Load service account credentials
 const keyPath = path.join(process.cwd(), 'service-account.json');
@@ -12,7 +12,7 @@ const auth = new google.auth.GoogleAuth({
   scopes: ['https://www.googleapis.com/auth/spreadsheets'],
 });
 
-module.exports = async (req, res) => {
+export default async function handler(req, res) {
   if (req.method !== 'POST') {
     return res.status(405).json({ error: 'Method not allowed' });
   }
@@ -44,4 +44,4 @@ module.exports = async (req, res) => {
   } catch (err) {
     res.status(500).json({ error: err.message });
   }
-}; 
+} 
