@@ -2,8 +2,37 @@ import { Button } from "@/components/ui/button";
 import { ArrowRight, Waves, Calendar, Mic, MapPin, Search } from "lucide-react";
 import heroImage from "@/assets/ocean-hero.jpg";
 import bg5 from "@/assets/bg1.png";
+import { useRef, useState } from "react";
+
+const GOOGLE_SCRIPT_URL = import.meta.env.VITE_GOOGLE_SCRIPT_URL;
 
 const Hero = () => {
+  const [submitted, setSubmitted] = useState(false);
+  const [error, setError] = useState(false);
+  async function handleWaitlistSubmit(e) {
+    e.preventDefault();
+    setError(false);
+    const email = e.target.elements.email.value;
+    try {
+      const response = await fetch(
+        GOOGLE_SCRIPT_URL,
+        {
+          method: "POST",
+          body: JSON.stringify({ email }),
+          headers: { "Content-Type": "application/json" },
+        }
+      );
+      if (response.ok) {
+        setSubmitted(true);
+        e.target.reset();
+      } else {
+        setError(true);
+      }
+    } catch (err) {
+      setError(true);
+    }
+  }
+
   return (
     <section className="min-h-screen pt-16 flex items-center relative overflow-hidden bg-slate-50">
       {/* Background image */}
@@ -32,8 +61,38 @@ const Hero = () => {
               Dorri captures and contextualizes your real-world networking moments, 
               turning your memories into meaningful connections that last.
             </p>
+            <div className="mt-6 max-w-md mx-auto">
+              {submitted ? (
+                <div className="text-center text-lg font-semibold text-primary mt-4">welcome to the dorriland &lt;3</div>
+              ) : (
+                <form
+                  className="flex items-center bg-white/60 rounded-full px-2 py-2 max-w-md mx-auto border border-white/80"
+                  onSubmit={handleWaitlistSubmit}
+                >
+                  <input
+                    type="email"
+                    name="email"
+                    required
+                    placeholder="enter your email"
+                    className="flex-1 bg-transparent border-none outline-none px-4 py-2 text-lg text-slate-700 placeholder:text-slate-400"
+                    style={{ minWidth: 0 }}
+                  />
+                  <button
+                    type="submit"
+                    className="ml-2 px-4 py-2 rounded-full bg-gradient-primary hover:scale-105 shadow-glow hover:shadow-glow text-white hover:bg-primary/90 transition text-lg"
+                  >
+                    join the waitlist
+                  </button>
+                </form>
+              )}
+              {error && (
+                <div className="text-center text-red-600 mt-2">
+                  Something went wrong. Please try again!
+                </div>
+              )}
+            </div>
           </div>
-          
+{/*           
           <div className="flex flex-col sm:flex-row gap-4 justify-center">
             <Button variant="hero" size="lg" className="text-lg px-8" asChild>
               <a href="https://tally.so/r/wkjLjM" target="_blank" rel="noopener noreferrer">
@@ -46,7 +105,7 @@ const Hero = () => {
                 How It Works
               </a>
             </Button>
-          </div>
+          </div> */}
           
                       <div className="grid grid-cols-4 gap-8 pt-8 max-w-3xl mx-auto">
               <div className="text-center">
