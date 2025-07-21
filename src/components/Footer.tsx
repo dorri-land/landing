@@ -17,7 +17,7 @@ const Footer = () => {
               Your memory layer for the real world. Never forget who you met, 
               what you heard, or why it mattered.
             </p>
-            <div className="flex gap-4">
+            <div className="flex gap-4 mb-4">
               <a href="https://twitter.com/dorri-land" target="_blank" rel="noopener noreferrer">
                 <Twitter className="h-5 w-5 text-muted-foreground hover:text-primary cursor-pointer transition-colors" />
               </a>
@@ -29,6 +29,9 @@ const Footer = () => {
                   <path d="M12.75 2.25h3A.75.75 0 0 1 16.5 3v2.25a3.75 3.75 0 0 0 3.75 3.75h.75a.75.75 0 0 1 .75.75v2.25a.75.75 0 0 1-.75.75h-1.5v5.25a6.75 6.75 0 1 1-6.75-6.75.75.75 0 0 1 .75.75v2.25a.75.75 0 0 1-.75.75 2.25 2.25 0 1 0 2.25 2.25V3a.75.75 0 0 1 .75-.75z" />
                 </svg>
               </a>
+            </div>
+            <div className="mb-4">
+              <a href="mailto:hello@dorri.land" className="text-muted-foreground hover:text-primary underline transition-colors text-sm">hello@dorri.land</a>
             </div>
           </div>
           
