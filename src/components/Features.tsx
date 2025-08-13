@@ -93,13 +93,13 @@ const Features = () => {
 
   return (
     <section id="features" className="py-20 bg-gradient-subtle">
-      <div className="container mx-auto px-4">
+      <div className="container mx-auto px-8 sm:px-12">
         <div className="text-center mb-16">
-          <h2 className="text-4xl font-bold mb-6">
+          <h2 className="text-3xl sm:text-4xl font-bold mb-6">
             Your Networking
             <span className="bg-gradient-primary bg-clip-text text-transparent"> Superpower</span>
           </h2>
-          <p className="text-xl text-muted-foreground max-w-3xl mx-auto">
+          <p className="text-lg sm:text-xl text-muted-foreground max-w-3xl mx-auto">
             Dorri transforms how you build and maintain professional relationships, 
             giving you the context and intelligence you need to connect meaningfully.
           </p>

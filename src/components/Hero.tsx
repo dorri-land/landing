@@ -45,16 +45,16 @@ const Hero = () => {
       </div>
       
       {/* Content */}
-      <div className="container mx-auto px-4 py-20 relative z-10">
+      <div className="container mx-auto px-12 sm:px-12 py-20 relative z-10">
         <div className="max-w-4xl mx-auto text-center space-y-12">
           <div className="space-y-6">
-            <h1 className="text-5xl lg:text-6xl font-semibold leading-tight text-slate-700">
-              Your  
+            <h1 className="text-4xl sm:text-5xl lg:text-6xl font-semibold leading-tight text-slate-700">
+              Your 
               <span className="bg-gradient-secondary bg-clip-text text-transparent"> memory layer </span>
-              for <br /> the
+              for <span className="hidden sm:inline"><br /></span> the
                <span className="bg-gradient-secondary bg-clip-text text-transparent"> real world</span>.
             </h1>
-            <p className="text-lg text-slate-600 leading-relaxed max-w-3xl mx-auto">
+            <p className="text-base sm:text-lg text-slate-600 leading-relaxed max-w-2xl mx-auto">
               Never forget who you met, where you met them, or what you talked about. 
               Dorri captures and contextualizes your real-world networking moments, 
               turning your memories into meaningful connections that last.

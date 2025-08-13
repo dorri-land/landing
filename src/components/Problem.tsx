@@ -31,13 +31,13 @@ const Problem = () => {
 
   return (
     <section className="py-20 bg-gradient-to-br from-slate-100 to-blue-50">
-      <div className="container mx-auto px-4">
+      <div className="container mx-auto px-8 sm:px-12">
         <div className="text-center mb-16">
-          <h2 className="text-4xl font-bold mb-6">
+          <h2 className="text-3xl sm:text-4xl font-bold mb-6">
             Modern Networking is
             <span className="text-destructive"> Broken</span>
           </h2>
-          <p className="text-xl text-muted-foreground max-w-3xl mx-auto">
+          <p className="text-lg sm:text-xl text-muted-foreground max-w-3xl mx-auto">
             You attend networking events, conferences, and coffee chats. You make great connections. 
             But like Dory, your memories drift away and you can't remember the details that matter.
           </p>

@@ -123,13 +123,13 @@ const UseCases = () => {
 
   return (
     <section className="py-20 bg-gradient-subtle">
-      <div className="container mx-auto px-4">
+      <div className="container mx-auto px-8 sm:px-12">
         <div className="text-center mb-16">
-          <h2 className="text-4xl font-bold mb-6">
+          <h2 className="text-3xl sm:text-4xl font-bold mb-6">
             Who Uses
             <span className="bg-gradient-primary bg-clip-text text-transparent"> Dorri?</span>
           </h2>
-          <p className="text-xl text-muted-foreground max-w-3xl mx-auto">
+          <p className="text-lg sm:text-xl text-muted-foreground max-w-3xl mx-auto">
             From college students building their first network to VCs managing hundreds of relationships, 
             Dorri adapts to your networking style and professional needs.
           </p>
