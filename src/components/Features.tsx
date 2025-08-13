@@ -115,12 +115,15 @@ const Features = () => {
                   : ''
               }`}
             >
-              <div className="flex items-start gap-4">
-                <div className="p-3 rounded-lg bg-muted/50">
-                  {feature.icon}
+              <div className="flex flex-col sm:flex-row sm:items-start gap-4">
+                <div className="flex items-center sm:items-start gap-3 sm:gap-4">
+                  <div className="p-3 rounded-lg bg-muted/50 flex-shrink-0">
+                    {feature.icon}
+                  </div>
+                  <h3 className="text-xl font-semibold mb-0 sm:mb-3 sm:hidden">{feature.title}</h3>
                 </div>
                 <div className="flex-1">
-                  <h3 className="text-xl font-semibold mb-3">{feature.title}</h3>
+                  <h3 className="text-xl font-semibold mb-3 hidden sm:block">{feature.title}</h3>
                   <p className="text-muted-foreground mb-4 leading-relaxed">{feature.description}</p>
                   <ul className="space-y-2 mb-4">
                     {feature.details.map((detail, idx) => (

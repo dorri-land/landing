@@ -72,12 +72,12 @@ const Hero = () => {
                     name="email"
                     required
                     placeholder="enter your email"
-                    className="flex-1 bg-transparent border-none outline-none px-4 py-2 text-lg text-slate-700 placeholder:text-slate-400"
+                    className="flex-1 bg-transparent border-none outline-none px-3 sm:px-4 py-2 text-base sm:text-lg text-slate-700 placeholder:text-slate-400"
                     style={{ minWidth: 0 }}
                   />
                   <button
                     type="submit"
-                    className="ml-2 px-4 py-2 rounded-full bg-gradient-primary hover:scale-105 shadow-glow hover:shadow-glow text-white hover:bg-primary/90 transition text-lg"
+                    className="ml-2 px-3 sm:px-4 py-2 rounded-full bg-gradient-primary hover:scale-105 shadow-glow hover:shadow-glow text-white hover:bg-primary/90 transition text-base sm:text-lg"
                   >
                     join the waitlist
                   </button>
