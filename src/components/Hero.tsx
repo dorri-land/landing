@@ -46,7 +46,7 @@ const Hero = () => {
       
       {/* Content */}
       <div className="container mx-auto px-12 sm:px-12 py-20 relative z-10">
-        <div className="max-w-4xl mx-auto text-center space-y-12">
+        <div className="max-w-4xl mx-auto text-center space-y-8 sm:space-y-12">
           <div className="space-y-6">
             <h1 className="text-4xl sm:text-5xl lg:text-6xl font-semibold leading-tight text-slate-700">
               Your 
@@ -54,7 +54,7 @@ const Hero = () => {
               for <span className="hidden sm:inline"><br /></span> the
                <span className="bg-gradient-secondary bg-clip-text text-transparent"> real world</span>.
             </h1>
-            <p className="text-base sm:text-lg text-slate-600 leading-relaxed max-w-2xl mx-auto">
+            <p className="text-sm sm:text-lg text-slate-600 leading-relaxed max-w-2xl mx-auto">
               Never forget who you met, where you met them, or what you talked about. 
               Dorri captures and contextualizes your real-world networking moments, 
               turning your memories into meaningful connections that last.
@@ -105,7 +105,7 @@ const Hero = () => {
             </Button>
           </div> */}
           
-                      <div className="grid grid-cols-4 gap-8 pt-8 max-w-3xl mx-auto">
+                      <div className="grid grid-cols-4 gap-8 pt-4 sm:pt-8 max-w-3xl mx-auto">
               <div className="text-center">
                 <MapPin className="h-8 w-8 text-primary mx-auto mb-2" />
                 <div className="text-sm text-slate-600">Attend Events</div>

@@ -6,10 +6,12 @@ const Header = () => {
     <header className="fixed top-4 left-1/2 -translate-x-1/2 w-[95vw] max-w-7xl z-50 bg-white/65 backdrop-blur rounded-2xl border border-white/90 shadow-lg">
       <div className="container mx-auto pl-12 pr-12 h-16 flex items-center justify-between">
         <div className="flex items-center gap-2">
-          <img src={logo} alt="dorri logo" className="h-8 w-8" />
-          <span className="text-2xl font-medium lowercase bg-gradient-primary bg-clip-text text-transparent">
-            dorri
-          </span>
+          <a href="/" className="flex items-center gap-2 hover:opacity-80 transition-opacity">
+            <img src={logo} alt="dorri logo" className="h-8 w-8" />
+            <span className="text-2xl font-medium lowercase bg-gradient-primary bg-clip-text text-transparent">
+              dorri
+            </span>
+          </a>
         </div>
         
         <nav className="hidden md:flex items-center gap-8">
